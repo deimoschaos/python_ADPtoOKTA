@@ -118,6 +118,11 @@ def runBashFile():
 #Cleans up all the bash files
 def cleanup():
 
+    #creates userArchive if it doesn't already exist
+    os.system("mkdir -p userArchive")
+
+    #Creates date/time directory under the userArchive
+    #Moves createUser* files to that directory
     d = date.fromordinal(730920) # 730920th day after 1. 1. 0001
     currentDate = d.strftime("%d%m%y")
     currentTime = time.strftime("%Ih%Mm%Ss")
