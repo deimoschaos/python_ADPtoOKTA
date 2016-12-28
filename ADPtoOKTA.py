@@ -1,11 +1,11 @@
 import csv
+import os
+import io
+import time
 from okta import UsersClient
 from okta.models.user import User
 from okta import UserGroupsClient
 from okta.models.usergroup import UserGroup
-import os
-import io
-import time
 from datetime import date
 
 #Find new users
